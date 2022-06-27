@@ -13,14 +13,14 @@ Note that this repo has a [Companion Guide on Notion](https://danielritchie.noti
 			
 
 ## Notable Files in this Repo
-data/CityDAO_ParcelZero.kml
-: The foundation of this project.  Boundaries of CityDAO.io's "Parcel Zero" AKA "Parcel 0"
-imagery/
-TBD
-: consolidated file w/everything together
-TBD output/GeoJSON 
-: file to be consumed by [CityDAO's Parcel Viewer](https://citydao.vercel.app/)
-
+data/CityDAO_ParcelZero.kml    
+: The foundation of this project.  Boundaries of CityDAO.io's "Parcel Zero" AKA "Parcel 0"  
+imagery/   
+TBD  
+: consolidated file w/everything together  
+TBD output/GeoJSON   
+: file to be consumed by [CityDAO's Parcel Viewer](https://citydao.vercel.app/)  
+  
 ## Datasets (/data)
 | Dataset | Description | Use |
 | ----------- | ----------- | ------------- |
