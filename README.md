@@ -10,23 +10,13 @@ Note that this repo has a [Companion Guide on Notion](https://danielritchie.noti
  - [Polygon Division (Multiple Plots from a Single Parcel)](https://www.notion.so/danielritchie/Turning-Dirt-into-NFTs-with-Quantum-GIS-4fd0479642e043739eb4beef39593bc7#7c7d5866faab425999b2ce4061ef7d1b)
  - [Assigning Metadata to Polygons](https://www.notion.so/danielritchie/Turning-Dirt-into-NFTs-with-Quantum-GIS-4fd0479642e043739eb4beef39593bc7#21e87367998d481ab677b5f16d81e1a5)
  - [Creating GeoJSON for Use in Web Apps](https://www.notion.so/danielritchie/Turning-Dirt-into-NFTs-with-Quantum-GIS-4fd0479642e043739eb4beef39593bc7#95bcbdd9f0e34ac59a81c6dd54603ef5)
-			
-
-## Notable Files in this Repo
-data/CityDAO_ParcelZero.kml    
- : The foundation of this project.  Boundaries of CityDAO.io's "Parcel Zero" AKA "Parcel 0"  
-imagery/   
-TBD  
- : consolidated file w/everything together  
-TBD output/GeoJSON   
- : file to be consumed by [CityDAO's Parcel Viewer](https://citydao.vercel.app/)  
   
 ## Datasets (/data)
 Notable files are **highlighted**.
 | Dataset | Description | Use |
 | ----------- | ----------- | ------------- |
 |OG_Parcel0 | Outdated borders| Reference Data |
-|**CityDAO_ParcelZero** | The foundation of this project.  Current boundaries of CityDAO.io's "Parcel Zero" AKA "Parcel 0"  | Reference Data |
+|**CityDAO_ParcelZero | The foundation of this project.  Current boundaries of CityDAO.io's "Parcel Zero" AKA "Parcel 0"  | Reference Data **|
 |usfs_border | USGS Forest Service boundary (entire west boundary of property)| NFT Metadata (TBD) |
 |corners | Brass PLSS Corners referenced in deed, and aluminum property corners from survey| IRL Marker |
 |drainage | Prominent drainage areas across property | Reserved Area |
@@ -38,8 +28,8 @@ Notable files are **highlighted**.
 |TBD: Moon Mountain| The Parcel's western peak; highest point on the property | TBD |
 |TBD: Diamond Hill| The Parcel's Prominent Hill, where the flag is planted | TBD |
 |TBD: Plots (example only, final TBD)| A shapefile containing the divided polygons | Reference Data |
-|**TBD: consolidated**| | |
-|**TBD: geojson**|||
+|**TBD: consolidated| | **|
+|**TBD: geojson|File to be consumed by a web app, E.g. [CityDAO's Parcel Viewer](https://citydao.vercel.app/)|**|
 |Google Satellite Image |||
 |TBD: Avalanche Danger || NFT Metadata (TBD) |
 
@@ -47,7 +37,7 @@ Notable files are **highlighted**.
 | Image | Description | Use |
 | ----------- | ----------- | ------ |
 |Google Satellite Image |||
-|**Classified Raster (Google Satellite)**| Land Composition (Rock/Dirt/Vegetation) | NFT Metadata |
+|**Classified Raster (Google Satellite)| Land Composition (Rock/Dirt/Vegetation) | NFT Metadata ** |
 
 ### Use Descriptions
 Reference Data
