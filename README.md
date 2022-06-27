@@ -1,5 +1,5 @@
 # Dirt to Data
-Polygon Division for Turning Dirt into Data using Quantum GIS; a Public Goods project.  Identification and GIS digitization of an IRL property in Wyoming known as "Parcel 0" AKA "Parcel Zero," the first property purchased by [CityDAO](https://www.citydao.io).
+Turning Dirt into Data using Quantum GIS and the [RFCL Polygon Divider Plugin](https://github.com/jonnyhuck/RFCL-PolygonDivider); a Public Goods project.  Digitization of an IRL property in Wyoming known as "Parcel 0" AKA "Parcel Zero" for use in related NFTs.  Parcel Zero is the first property purchased by [CityDAO](https://www.citydao.io).
 
 ## Overview
 Note that this repo has a [Companion Guide on Notion](https://danielritchie.notion.site/Turning-Dirt-into-NFTs-with-Quantum-GIS-4fd0479642e043739eb4beef39593bc7).  The Notion page has a complete breakdown of how to use the assets contained in this repository, as well as related background info such as:
@@ -28,9 +28,7 @@ Notable files are **highlighted**.
 |TBD: Moon Mountain| The Parcel's western peak; highest point on the property | TBD |
 |TBD: Diamond Hill| The Parcel's Prominent Hill, where the flag is planted | TBD |
 |TBD: Plots (example only, final TBD)| A shapefile containing the divided polygons | Reference Data |
-|**TBD: consolidated**| | |
-|**TBD: geojson**|File to be consumed by a web app, E.g. [CityDAO's Parcel Viewer](https://citydao.vercel.app/)||
-|Google Satellite Image |||
+|**TBD: consolidated**| | Reference Data |
 |TBD: Avalanche Danger || NFT Metadata (TBD) |
 
 ## Images (/imagery)
@@ -39,8 +37,15 @@ Notable files are **highlighted**.
 |Google Satellite Image |||
 |**Classified Raster (Google Satellite)**| Land Composition (Rock/Dirt/Vegetation) | NFT Metadata |
 
+
+## Exported Files (/output)
+| File | Description | Use |
+| ----------- | ----------- | ------ |
+|**TBD: plot geojson**|File to be consumed by a web app, E.g. [CityDAO's Parcel Viewer](https://citydao.vercel.app/)||
+|TBD: negative space geojson|||
+
 ### Use Descriptions
-Reference Data
-Reserved Area 
-NFT Metadata 
+**Reference Data** - Raw geospacial data, either consumed by or created from this process
+**Reserved Area** - Non-allocated; will show up as negative space against the main polygon
+**NFT Metadata** - Information that is extracted from the datasets and identified as NFT metadata 
  
