@@ -16,7 +16,7 @@ Notable files are **highlighted**.
 | Dataset | Description | Use |
 | ----------- | ----------- | ------------- |
 |OG_Parcel0 | Outdated borders| Reference Data |
-|**CityDAO_ParcelZero | The foundation of this project.  Current boundaries of CityDAO.io's "Parcel Zero" AKA "Parcel 0"  | Reference Data **|
+|**CityDAO_ParcelZero** | The foundation of this project.  Current boundaries of CityDAO.io's "Parcel Zero" AKA "Parcel 0"  | Reference Data |
 |usfs_border | USGS Forest Service boundary (entire west boundary of property)| NFT Metadata (TBD) |
 |corners | Brass PLSS Corners referenced in deed, and aluminum property corners from survey| IRL Marker |
 |drainage | Prominent drainage areas across property | Reserved Area |
@@ -28,8 +28,8 @@ Notable files are **highlighted**.
 |TBD: Moon Mountain| The Parcel's western peak; highest point on the property | TBD |
 |TBD: Diamond Hill| The Parcel's Prominent Hill, where the flag is planted | TBD |
 |TBD: Plots (example only, final TBD)| A shapefile containing the divided polygons | Reference Data |
-|**TBD: consolidated| | **|
-|**TBD: geojson|File to be consumed by a web app, E.g. [CityDAO's Parcel Viewer](https://citydao.vercel.app/)|**|
+|**TBD: consolidated**| | |
+|**TBD: geojson**|File to be consumed by a web app, E.g. [CityDAO's Parcel Viewer](https://citydao.vercel.app/)||
 |Google Satellite Image |||
 |TBD: Avalanche Danger || NFT Metadata (TBD) |
 
@@ -37,7 +37,7 @@ Notable files are **highlighted**.
 | Image | Description | Use |
 | ----------- | ----------- | ------ |
 |Google Satellite Image |||
-|**Classified Raster (Google Satellite)| Land Composition (Rock/Dirt/Vegetation) | NFT Metadata ** |
+|**Classified Raster (Google Satellite)**| Land Composition (Rock/Dirt/Vegetation) | NFT Metadata |
 
 ### Use Descriptions
 Reference Data
