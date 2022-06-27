@@ -1,8 +1,8 @@
-# Dirt to Data
-Turning Dirt into Data using Quantum GIS and the [RFCL Polygon Divider Plugin](https://github.com/jonnyhuck/RFCL-PolygonDivider); a Public Goods project.  Digitization of an IRL property in Wyoming known as "Parcel 0" AKA "Parcel Zero" for use in related NFTs.  Parcel Zero is the first property purchased by [CityDAO](https://www.citydao.io).
+# Dirt to Data - a Public Goods project
+Turning Dirt into Data using Quantum GIS and the [RFCL Polygon Divider Plugin](https://github.com/jonnyhuck/RFCL-PolygonDivider).  Digitization of an IRL property in Wyoming known as "Parcel 0" AKA "Parcel Zero" for use in related NFTs.  Parcel Zero is the first property purchased by [CityDAO](https://www.citydao.io).
 
 ## Overview
-Note that this repo has a [Companion Guide on Notion](https://danielritchie.notion.site/Turning-Dirt-into-NFTs-with-Quantum-GIS-4fd0479642e043739eb4beef39593bc7).  The Notion page has a complete breakdown of how to use the assets contained in this repository, as well as related background info such as:
+Note that this repo has a [Companion Guide on Notion](https://danielritchie.notion.site/Turning-Dirt-into-NFTs-with-Quantum-GIS-4fd0479642e043739eb4beef39593bc7).  The Notion page has a complete breakdown of how to use the assets contained in this repository for sourcing meaningful metadata, as well as related background info such as:
  - [Deed Description & Survey Info w/PLSS Overview](https://www.notion.so/danielritchie/Turning-Dirt-into-NFTs-with-Quantum-GIS-4fd0479642e043739eb4beef39593bc7#a74f960ef33d4ff08c355bf695adfe44)
  - [Sourcing GIS Data](https://www.notion.so/danielritchie/Turning-Dirt-into-NFTs-with-Quantum-GIS-4fd0479642e043739eb4beef39593bc7#a07f902a5313499abb9c42f30951700d)
  - [Vegetation Estimation & Land Classification](https://www.notion.so/danielritchie/Turning-Dirt-into-NFTs-with-Quantum-GIS-4fd0479642e043739eb4beef39593bc7#44ba07a634a14a43894e4dc8628325c4)
@@ -25,8 +25,8 @@ Notable files are **highlighted**.
 |roads | The main access road into the property, and an old 4x4 path to the top of Moon Mountain| Reserved Area |
 |rust_belt | An area of the property that appears to have a high iron content| Possible NFT Metadata |
 |subdivisions | Arbitrary subdivisions around the property, to be used for metadata (Degen Valley, LFG Heights, Diamond Hill, Moon Township, tbd) | NFT Metadata (TBD) |
-|TBD: Moon Mountain| The Parcel's western peak; highest point on the property | TBD |
-|TBD: Diamond Hill| The Parcel's Prominent Hill, where the flag is planted | TBD |
+|TBD: Moon Mountain| The parcel's western peak; highest point on the property | TBD |
+|TBD: Diamond Hill| The parcel's prominent hill, where the [CityDAO flag](https://video-images.vice.com/articles/6182abce8aa8f0009b6b9b1f/lede/1635954279593-h-c4tghmdyuccjaltf-h5.png?crop=1xw:0.7539267015706806xh;center,center) is located | TBD |
 |TBD: Plots (example only, final TBD)| A shapefile containing the divided polygons | Reference Data |
 |**TBD: consolidated**| | Reference Data |
 |TBD: Avalanche Danger || NFT Metadata (TBD) |
@@ -42,10 +42,10 @@ Notable files are **highlighted**.
 | File | Description | Use |
 | ----------- | ----------- | ------ |
 |**TBD: plot geojson**|File to be consumed by a web app, E.g. [CityDAO's Parcel Viewer](https://citydao.vercel.app/)||
-|TBD: negative space geojson|||
+|TBD: negative space geojson (for each separate object)|||
 
 ### Use Descriptions
-**Reference Data** - Raw geospacial data, either consumed by or created from this process
-**Reserved Area** - Non-allocated; will show up as negative space against the main polygon
-**NFT Metadata** - Information that is extracted from the datasets and identified as NFT metadata 
- 
+**Reference Data** - Raw geospacial data, either consumed by or created from this process  
+**Reserved Area** - Non-allocated; will show up as negative space against the main polygon  
+**NFT Metadata** - Information that is extracted from the datasets and identified as NFT metadata   
+  
