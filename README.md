@@ -1,5 +1,5 @@
 # Dirt to Data
-Polygon Division for Turning Dirt into Data using Quantum GIS; a Public Goods project.
+Polygon Division for Turning Dirt into Data using Quantum GIS; a Public Goods project.  Identification and GIS digitization of an IRL property in Wyoming known as "Parcel 0" AKA "Parcel Zero," the first property purchased by [CityDAO](https://www.citydao.io).
 
 ## Overview
 Note that this repo has a [Companion Guide on Notion](https://danielritchie.notion.site/Turning-Dirt-into-NFTs-with-Quantum-GIS-4fd0479642e043739eb4beef39593bc7).  The Notion page has a complete breakdown of how to use the assets contained in this repository, as well as related background info such as:
@@ -14,18 +14,19 @@ Note that this repo has a [Companion Guide on Notion](https://danielritchie.noti
 
 ## Notable Files in this Repo
 data/CityDAO_ParcelZero.kml    
-: The foundation of this project.  Boundaries of CityDAO.io's "Parcel Zero" AKA "Parcel 0"  
+ : The foundation of this project.  Boundaries of CityDAO.io's "Parcel Zero" AKA "Parcel 0"  
 imagery/   
 TBD  
-: consolidated file w/everything together  
+ : consolidated file w/everything together  
 TBD output/GeoJSON   
-: file to be consumed by [CityDAO's Parcel Viewer](https://citydao.vercel.app/)  
+ : file to be consumed by [CityDAO's Parcel Viewer](https://citydao.vercel.app/)  
   
 ## Datasets (/data)
+Notable files are **highlighted**.
 | Dataset | Description | Use |
 | ----------- | ----------- | ------------- |
 |OG_Parcel0 | Outdated borders| Reference Data |
-|CityDAO_ParcelZero | Current borders| Reference Data |
+|**CityDAO_ParcelZero** | The foundation of this project.  Current boundaries of CityDAO.io's "Parcel Zero" AKA "Parcel 0"  | Reference Data |
 |usfs_border | USGS Forest Service boundary (entire west boundary of property)| NFT Metadata (TBD) |
 |corners | Brass PLSS Corners referenced in deed, and aluminum property corners from survey| IRL Marker |
 |drainage | Prominent drainage areas across property | Reserved Area |
@@ -37,8 +38,8 @@ TBD output/GeoJSON
 |TBD: Moon Mountain| The Parcel's western peak; highest point on the property | TBD |
 |TBD: Diamond Hill| The Parcel's Prominent Hill, where the flag is planted | TBD |
 |TBD: Plots (example only, final TBD)| A shapefile containing the divided polygons | Reference Data |
-|TBD: consolidated| | |
-|TBD: geojson|||
+|**TBD: consolidated**| | |
+|**TBD: geojson**|||
 |Google Satellite Image |||
 |TBD: Avalanche Danger || NFT Metadata (TBD) |
 
@@ -46,9 +47,10 @@ TBD output/GeoJSON
 | Image | Description | Use |
 | ----------- | ----------- | ------ |
 |Google Satellite Image |||
-|Classified Raster (Google Satellite)| Land Composition (Rock/Dirt/Vegetation) | NFT Metadata |
+|**Classified Raster (Google Satellite)**| Land Composition (Rock/Dirt/Vegetation) | NFT Metadata |
 
 ### Use Descriptions
+Reference Data
 Reserved Area 
 NFT Metadata 
  
