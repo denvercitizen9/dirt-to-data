@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "mdnatx-uno",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Moon Mountain", "POLY_ID": 3565, "UNIQUE_ID": "1ac1c74c-362a-40c0-b794-d7dd639a4e84", "AREA": 241.86918543450872, "POINTX": 2091523, "POINTY": 16324588 }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -109.25778395093532, 44.921861027212152 ], [ -109.257785232680575, 44.921818620548585 ], [ -109.257844416637013, 44.921819523737618 ], [ -109.257843108477132, 44.921862805800586 ], [ -109.257786080741823, 44.921861935516887 ], [ -109.25778395093532, 44.921861027212152 ] ] ] ] } }
+]
+}
