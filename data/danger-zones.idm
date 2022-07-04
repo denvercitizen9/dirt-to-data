@@ -1,0 +1,8 @@
+<OGRMILayerAttrIndex>
+  <MIIDFilename>danger-zones.ind</MIIDFilename>
+  <OGRMIAttrIndex>
+    <FieldIndex>0</FieldIndex>
+    <FieldName>Hazard</FieldName>
+    <IndexIndex>1</IndexIndex>
+  </OGRMIAttrIndex>
+</OGRMILayerAttrIndex>
