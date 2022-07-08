@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "degentrance",
+"features": [
+{ "type": "Feature", "properties": { "item": "Degentrance" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -109.254945, 44.921376 ], [ -109.254948, 44.921609 ], [ -109.255067, 44.92161 ], [ -109.255215, 44.921539 ], [ -109.255235, 44.921461 ], [ -109.254945, 44.921376 ] ] ] } }
+]
+}
