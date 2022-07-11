@@ -1,0 +1,5 @@
+# feature
+CASE 
+WHEN (("SLOPE_1" >= 30) AND ("SLOPE_1" < 34)) THEN 'High Avalanche Risk'
+WHEN "SLOPE_1" > 34 THEN 'Extreme Avalanche Risk'
+END

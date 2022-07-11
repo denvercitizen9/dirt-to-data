@@ -1,5 +1,5 @@
 CASE 
-WHEN "elevation_feet" < 4900 THEN 'Lowlands'
-WHEN (("elevation_feet" >= 4900) AND ("elevation_feet" < 5000)) THEN 'Midlands'
-WHEN "elevation_feet" > 5000 THEN 'Highlands'
+WHEN "elevatio_1" < 4900 THEN 'Lower'
+WHEN (("elevatio_1" >= 4900) AND ("elevatio_1" < 5000)) THEN 'Mid'
+WHEN "elevatio_1" > 5000 THEN 'Upper'
 END
