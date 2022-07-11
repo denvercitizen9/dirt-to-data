@@ -1,0 +1,10 @@
+#Rock/Dirt/Vegetation Expressions
+
+#other_cover
+(HISTO_0 / (HISTO_0 + HISTO_4 + HISTO_255)) * 100
+
+#rock_cover
+(HISTO_4 / (HISTO_0 + HISTO_4 + HISTO_255)) * 100
+
+#vegetation_cover
+100 - other_cover - rock_cover

@@ -1,0 +1,7 @@
+CASE 
+WHEN "SLOPE_1" < 1 THEN 'Flat'
+WHEN (("SLOPE_1" >= 1) AND ("SLOPE_1" < 5)) THEN 'Low'
+WHEN (("SLOPE_1" >= 5) AND ("SLOPE_1" < 12)) THEN 'Steep'
+WHEN (("SLOPE_1" >= 12) AND ("SLOPE_1" < 17)) THEN 'Very Steep'
+WHEN "SLOPE_1" > 17 THEN 'Extremely Steep'
+END
