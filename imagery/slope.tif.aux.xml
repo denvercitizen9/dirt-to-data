@@ -1,10 +1,227 @@
 <PAMDataset>
   <PAMRasterBand band="1">
+    <GDALRasterAttributeTable tableType="thematic">
+      <FieldDefn index="0">
+        <Name>min</Name>
+        <Type>1</Type>
+        <Usage>3</Usage>
+      </FieldDefn>
+      <FieldDefn index="1">
+        <Name>max</Name>
+        <Type>1</Type>
+        <Usage>4</Usage>
+      </FieldDefn>
+      <FieldDefn index="2">
+        <Name>label</Name>
+        <Type>2</Type>
+        <Usage>2</Usage>
+      </FieldDefn>
+      <Row index="0">
+        <F>38.5</F>
+        <F>39.5</F>
+        <F>39 degrees</F>
+      </Row>
+      <Row index="1">
+        <F>37.5</F>
+        <F>38.5</F>
+        <F>38 degrees</F>
+      </Row>
+      <Row index="2">
+        <F>36.5</F>
+        <F>37.5</F>
+        <F>37 degrees</F>
+      </Row>
+      <Row index="3">
+        <F>35.5</F>
+        <F>36.5</F>
+        <F>36 degrees</F>
+      </Row>
+      <Row index="4">
+        <F>34.5</F>
+        <F>35.5</F>
+        <F>35 degrees</F>
+      </Row>
+      <Row index="5">
+        <F>33.5</F>
+        <F>34.5</F>
+        <F>34 degrees</F>
+      </Row>
+      <Row index="6">
+        <F>32.5</F>
+        <F>33.5</F>
+        <F>33 degrees</F>
+      </Row>
+      <Row index="7">
+        <F>31.5</F>
+        <F>32.5</F>
+        <F>32 degrees</F>
+      </Row>
+      <Row index="8">
+        <F>30.5</F>
+        <F>31.5</F>
+        <F>31 degrees</F>
+      </Row>
+      <Row index="9">
+        <F>29.5</F>
+        <F>30.5</F>
+        <F>30 degrees</F>
+      </Row>
+      <Row index="10">
+        <F>28.5</F>
+        <F>29.5</F>
+        <F>29 degrees</F>
+      </Row>
+      <Row index="11">
+        <F>27.5</F>
+        <F>28.5</F>
+        <F>28 degrees</F>
+      </Row>
+      <Row index="12">
+        <F>26.5</F>
+        <F>27.5</F>
+        <F>27 degrees</F>
+      </Row>
+      <Row index="13">
+        <F>25.5</F>
+        <F>26.5</F>
+        <F>26 degrees</F>
+      </Row>
+      <Row index="14">
+        <F>24.5</F>
+        <F>25.5</F>
+        <F>25 degrees</F>
+      </Row>
+      <Row index="15">
+        <F>23.5</F>
+        <F>24.5</F>
+        <F>24 degrees</F>
+      </Row>
+      <Row index="16">
+        <F>22.5</F>
+        <F>23.5</F>
+        <F>23 degrees</F>
+      </Row>
+      <Row index="17">
+        <F>21.5</F>
+        <F>22.5</F>
+        <F>22 degrees</F>
+      </Row>
+      <Row index="18">
+        <F>20.5</F>
+        <F>21.5</F>
+        <F>21 degrees</F>
+      </Row>
+      <Row index="19">
+        <F>19.5</F>
+        <F>20.5</F>
+        <F>20 degrees</F>
+      </Row>
+      <Row index="20">
+        <F>18.5</F>
+        <F>19.5</F>
+        <F>19 degrees</F>
+      </Row>
+      <Row index="21">
+        <F>17.5</F>
+        <F>18.5</F>
+        <F>18 degrees</F>
+      </Row>
+      <Row index="22">
+        <F>16.5</F>
+        <F>17.5</F>
+        <F>17 degrees</F>
+      </Row>
+      <Row index="23">
+        <F>15.5</F>
+        <F>16.5</F>
+        <F>16 degrees</F>
+      </Row>
+      <Row index="24">
+        <F>14.5</F>
+        <F>15.5</F>
+        <F>15 degrees</F>
+      </Row>
+      <Row index="25">
+        <F>13.5</F>
+        <F>14.5</F>
+        <F>14 degrees</F>
+      </Row>
+      <Row index="26">
+        <F>12.5</F>
+        <F>13.5</F>
+        <F>13 degrees</F>
+      </Row>
+      <Row index="27">
+        <F>11.5</F>
+        <F>12.5</F>
+        <F>12 degrees</F>
+      </Row>
+      <Row index="28">
+        <F>10.5</F>
+        <F>11.5</F>
+        <F>11 degrees</F>
+      </Row>
+      <Row index="29">
+        <F>9.5</F>
+        <F>10.5</F>
+        <F>10 degrees</F>
+      </Row>
+      <Row index="30">
+        <F>8.5</F>
+        <F>9.5</F>
+        <F>9 degrees</F>
+      </Row>
+      <Row index="31">
+        <F>7.5</F>
+        <F>8.5</F>
+        <F>8 degrees</F>
+      </Row>
+      <Row index="32">
+        <F>6.5</F>
+        <F>7.5</F>
+        <F>7 degrees</F>
+      </Row>
+      <Row index="33">
+        <F>5.5</F>
+        <F>6.5</F>
+        <F>6 degrees</F>
+      </Row>
+      <Row index="34">
+        <F>4.5</F>
+        <F>5.5</F>
+        <F>5 degrees</F>
+      </Row>
+      <Row index="35">
+        <F>3.5</F>
+        <F>4.5</F>
+        <F>4 degrees</F>
+      </Row>
+      <Row index="36">
+        <F>2.5</F>
+        <F>3.5</F>
+        <F>3 degrees</F>
+      </Row>
+      <Row index="37">
+        <F>1.5</F>
+        <F>2.5</F>
+        <F>2 degrees</F>
+      </Row>
+      <Row index="38">
+        <F>0.5</F>
+        <F>1.5</F>
+        <F>1 degree</F>
+      </Row>
+      <Row index="39">
+        <F>0</F>
+        <F>0.5</F>
+        <F>zero slope</F>
+      </Row>
+    </GDALRasterAttributeTable>
     <Metadata>
-      <MDI key="STATISTICS_MAXIMUM">72.333576735558</MDI>
-      <MDI key="STATISTICS_MEAN">46.822815102335</MDI>
-      <MDI key="STATISTICS_MINIMUM">2.3789739365577</MDI>
-      <MDI key="STATISTICS_STDDEV">15.579445004625</MDI>
+      <MDI key="STATISTICS_MAXIMUM">38.308048248291</MDI>
+      <MDI key="STATISTICS_MEAN">16.986694057833</MDI>
+      <MDI key="STATISTICS_MINIMUM">0.59839844703674</MDI>
+      <MDI key="STATISTICS_STDDEV">8.2458760898411</MDI>
       <MDI key="STATISTICS_VALID_PERCENT">93.47</MDI>
     </Metadata>
   </PAMRasterBand>
