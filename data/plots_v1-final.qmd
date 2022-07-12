@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.22.7-Bia?owie?a">
+<qgis version="3.22.8-Bia?owie?a">
   <identifier></identifier>
   <parentidentifier></parentidentifier>
   <language></language>

@@ -1,5 +1,5 @@
 CASE 
 WHEN "elevatio_1" < 4900 THEN 'Lower'
 WHEN (("elevatio_1" >= 4900) AND ("elevatio_1" < 5000)) THEN 'Mid'
-WHEN "elevatio_1" > 5000 THEN 'Upper'
+WHEN "elevatio_1" >= 5000 THEN 'Upper'
 END
