@@ -12,31 +12,46 @@ Note that this repo has a [Companion Guide on Notion](https://danielritchie.noti
  - [Creating GeoJSON for Use in Web Apps](https://www.notion.so/danielritchie/Turning-Dirt-into-NFTs-with-Quantum-GIS-4fd0479642e043739eb4beef39593bc7#95bcbdd9f0e34ac59a81c6dd54603ef5)
   
 ## Repository Contents   
-Use descriptions:  
+The contents of the repository will fall into one of the following uses:  
 **Reference Data** - Raw geospacial data.  May be from external sources or created from this process  
 **Reserved Area** - Non-allocated; will show up as negative space against the main polygon  
 **NFT Metadata** - Information extracted from the datasets for use in NFT metadata   
-  
+**Intermediary** - A compound dataset which is built from an original data source but is not yet the final output. 
+
 Notable files are **highlighted**   
 
 ### Datasets (/data)
-| Dataset | Description | Use |
-| ----------- | ----------- | ------------- |
-|OG_Parcel0 | Outdated borders| Reference Data |
-|**CityDAO_ParcelZero** | The foundation of this project.  Current boundaries of CityDAO.io's "Parcel Zero" AKA "Parcel 0"  | Reference Data |
-|usfs_border | USGS Forest Service boundary (entire west boundary of property)| NFT Metadata (TBD) |
-|corners | Brass PLSS Corners referenced in deed, and aluminum property corners from survey| IRL Marker |
-|drainage | Prominent drainage areas across property | Reserved Area |
-|entrance_gate | An area reserved for a potential entrance gate to the property| Reserved Area |
-|launchpad | An area reserved for a virtual rocket launching pad (or helipad) | Reserved Area |
-|roads | The main access road into the property, and an old 4x4 path to the top of Moon Mountain| Reserved Area |
-|rust_belt | An area of the property that appears to have a high iron content| Possible NFT Metadata |
-|subdivisions | Arbitrary subdivisions around the property, to be used for metadata (Degen Valley, LFG Heights, Diamond Hill, Moon Township, Tendie Town) | NFT Metadata (TBD) |
-|TBD: Moon Mountain| The parcel's western peak; highest point on the property | TBD |
-|TBD: Diamond Hill| The parcel's prominent hill, where the [CityDAO flag](https://video-images.vice.com/articles/6182abce8aa8f0009b6b9b1f/lede/1635954279593-h-c4tghmdyuccjaltf-h5.png?crop=1xw:0.7539267015706806xh;center,center) is located | TBD |
-|TBD: Plots (example only, final TBD)| A shapefile containing the divided polygons | Reference Data |
-|**TBD: consolidated**| | Reference Data |
-|TBD: Avalanche Danger || NFT Metadata (TBD) |
+|DATASET|DESCRIPTION|USE|
+|-----------|-----------|-----------|
+|CityDAO_ParcelZero|Wyoming's description of Parcel Zero|Reference Data|
+|CityDAO_ParcelZero-negative|Parcel Zero, with all_negative_space removed|Intermediary|
+|**CityDAO_ParcelZero-subdivided-negative**|Parcel Zero, subdivided, with all_negative_space removed|Intermediary|
+|CityDAO_ParcelZero-subdivided|Arbitrary subdivisions around the property, to be used for metadata (Degen Valley, LFG Heights, Diamond Hill, Moon Township, Tendie Town) |NFT Metadata|
+|OG_Parcel0|The original boundaries, outdated|Reference Data|
+|OG_Parcel_6_complete|The original boundaries with road and parking, outdated|Reference Data|
+|all_negative_space|Intermediate data source.  Combination of degentrance, drainage, roads, and launchpad (as separate objects)|Intermediary|
+|all_negative_space_combined-draintop|all_negative_space, but as a single object showing drainage on top (visual for the Parcel viewer)|Intermediary|
+|all_negative_space_combined-roadtop|all_negative_space, but as a single object showing roads on top (visual for the Parcel viewer)|Intermediary|
+|all_negative_space_combined|Intermediate data source.  Combination of degentrance, drainage, roads, and launchpad (as a single object)|Intermediary|
+|degentrance| An area reserved for a potential entrance gate to the property|Reserved Area |
+|degentrance-road_combined||Intermediary|
+|drainage| Prominent drainage areas across property |Reserved Area |
+|roads| The main access road into the property, and an old 4x4 path to the top of Moon Mountain|Reserved Area |
+|launchpad| An area reserved for a virtual rocket launching pad (or helipad) |Reserved Area |
+|plots_v1|Output from Polygon divider|Intermediary|
+|plots_v1-behemoths|Plots larger than the standard, non-allocated|Intermediary|
+|plots_v1-centroid-data|Centers of Plots|Intermediary|
+|plots_v1-compliant-allocated|Standard sized plots which were allocated to NFT holders|Intermediary|
+|plots_v1-compliant|Standard sized plots|Intermediary|
+|**plots_v1-final**|Consolidated file containing all metadata and related derived info|Reference Data|
+|plots_v1-fragments|Plots smaller than the standard, non-allocated|Intermediary|
+|plots_v1-randomized|Allocation of plots to NFT holders|Intermediary|
+|points-of-interest-avalanche|Areas of risk derived from USGS 3DEP satellite data|NFT Metadata|
+|points-of-interest-irl|Real POI's on the property|NFT Metadata|
+|feature-areas-art|Artistic interpretations and Easter Eggs|NFT Metadata|
+|feature-areas-dangers|Potential dangers on the property, not used in metadata|NFT Metadata|
+|feature-areas-irl|Interesting features on the property|NFT Metadata|
+
 
 ### Images (/imagery)
 | Image | Description | Use |
