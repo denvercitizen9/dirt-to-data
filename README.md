@@ -12,7 +12,7 @@ Note that this repo has a [Companion Guide on Notion](https://danielritchie.noti
  - [Creating GeoJSON for Use in Web Apps](https://www.notion.so/danielritchie/Turning-Dirt-into-NFTs-with-Quantum-GIS-4fd0479642e043739eb4beef39593bc7#95bcbdd9f0e34ac59a81c6dd54603ef5)
   
 ## Repository Contents   
-The contents of the repository will fall into one of the following uses:  
+The below identified items can be categorized into one of the following uses:  
 **Reference Data** - Raw geospacial data.  May be from external sources or created from this process  
 **Reserved Area** - Non-allocated; will show up as negative space against the main polygon  
 **NFT Metadata** - Information extracted from the datasets for use in NFT metadata   
@@ -23,9 +23,9 @@ Notable files are **highlighted**
 ### Datasets (/data)
 |DATASET|DESCRIPTION|USE|
 |-----------|-----------|-----------|
-|CityDAO_ParcelZero|Wyoming's description of Parcel Zero|Reference Data|
+|**CityDAO_ParcelZero**|Official source of the parcel boundaries; Wyoming's description of Parcel Zero|Reference Data|
 |CityDAO_ParcelZero-negative|Parcel Zero, with all_negative_space removed|Intermediary|
-|**CityDAO_ParcelZero-subdivided-negative**|Parcel Zero, subdivided, with all_negative_space removed|Intermediary|
+|**CityDAO_ParcelZero-subdivided-negative**|Parcel Zero, subdivided, with all_negative_space removed.  This is the Polygon that is divided into plots.  |Intermediary|
 |CityDAO_ParcelZero-subdivided|Arbitrary subdivisions around the property, to be used for metadata (Degen Valley, LFG Heights, Diamond Hill, Moon Township, Tendie Town) |NFT Metadata|
 |OG_Parcel0|The original boundaries, outdated|Reference Data|
 |OG_Parcel_6_complete|The original boundaries with road and parking, outdated|Reference Data|
@@ -43,7 +43,7 @@ Notable files are **highlighted**
 |plots_v1-centroid-data|Centers of Plots|Intermediary|
 |plots_v1-compliant-allocated|Standard sized plots which were allocated to NFT holders|Intermediary|
 |plots_v1-compliant|Standard sized plots|Intermediary|
-|**plots_v1-final**|Consolidated file containing all metadata and related derived info|Reference Data|
+|**plots_v1-final**|Consolidated file containing all metadata, assignments, and related derived info for IPFS and the Parcel Viewer|Reference Data|
 |plots_v1-fragments|Plots smaller than the standard, non-allocated|Intermediary|
 |plots_v1-randomized|Allocation of plots to NFT holders|Intermediary|
 |points-of-interest-avalanche|Areas of risk derived from USGS 3DEP satellite data|NFT Metadata|
@@ -54,15 +54,35 @@ Notable files are **highlighted**
 
 
 ### Images (/imagery)
-| Image | Description | Use |
-| ----------- | ----------- | ------ |
-|Google Satellite Image |||
-|**Classified Raster (Google Satellite)**| Land Composition (Rock/Dirt/Vegetation) | NFT Metadata |
+|IMAGERY|DESCRIPTION|USE|
+|-----------|-----------|-----------|
+|3DEP|USGS 3D Elevation Profile Images; Lidar and IfSAR technology used to create DEM, DSM, Lidar point cloud images|Reference Data|
+|3DEP-32612|Same as above, but with 32612 CRS|Reference Data|
+|aspect|Output from r.slope.aspect|Intermediary|
+|aspect-32612|Same as above, but with 32612 CRS|Intermediary|
+|aspect-classification|Classified aspect data |NFT Metadata|
+|avalanche-classification|Classified avalanche data |NFT Metadata|
+|pzero_googlesat-classified_rendered|Classified Google Satellite imagery, for visually extracting Rock/Veg/Other information for each plot |NFT Metadata|
+|slope|Output from r.slope.aspect|Intermediary|
+|slope-32612|Same as above, but with 32612 CRS|Intermediary|
+|slope-classification|Classified slope data|NFT Metadata|
+|slope-classification-32612|Same as above, but with 32612 CRS|Intermediary|
+
 
 
 ### Exported Files (/output)
-| File | Description | Use |
-| ----------- | ----------- | ------ |
-|**TBD: plot geojson**|File to be consumed by a web app, E.g. [CityDAO's Parcel Viewer](https://citydao.vercel.app/)||
-|TBD: negative space geojson (for each separate object)|||
+|OUTPUT FILE|DESCRIPTION|USE|
+|-----------|-----------|-----------|
+|**negative-space/all-combined.geojson**|All of the negative space features combined, used with CityDAO_ParcelZero to create CityDAO_ParcelZero-negative |Reserved Area|
+|negative-space/degentrance-road_combined.geojson|Degentrance and Road, for visual layout in viewer|Intermediary|
+|negative-space/degentrance.geojson|Degentrance only, for visual layout in viewer|Intermediary|
+|negative-space/drainage.geojson|Drainage only, for visual layout in viewer|Intermediary|
+|negative-space/launchpad.geojson|Launchpad only, for visual layout in viewer|Intermediary|
+|negative-space/roads.geojson|Roads only, for visual layout in viewer|Intermediary|
+|parcel/CityDAO_ParcelZero-subdivided.geojson|Subdivided Parcel |Intermediary|
+|parcel/CityDAO_ParcelZero.geojson|Blank Parcel|Intermediary|
+|**plots/plots_v1-IPFS.geojson**|Final/full file containing all of the plots|Reference Data|
+|plots/plots_v1-ParcelViewer_Allocated.geojson|Only the plots that were allocated, used by [CityDAO's Parcel Viewer](https://citydao.vercel.app/) to separate tooltip responses|Reference Data|
+|plots/plots_v1-ParcelViewer_UnAllocated.geojson|Only the plots that were unallocated, used by [CityDAO's Parcel Viewer](https://citydao.vercel.app/) to separate tooltip responses|Reference Data|
+
 
