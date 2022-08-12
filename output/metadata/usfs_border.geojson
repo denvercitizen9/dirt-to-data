@@ -1,8 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "usfs_border",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ -109.26013776500929, 44.924470886611083 ], [ -109.260123569296766, 44.924471044526776 ], [ -109.260137312784224, 44.920879152388693 ], [ -109.260146748162128, 44.920879047278433 ], [ -109.26013776500929, 44.924470886611083 ] ] ] ] } }
-]
-}
